@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaptorManager", "Raptor\RaptorManager.csproj", "{285A1337-D423-4321-BC20-B02C4E3DB8F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaptorBackground", "RaptorBackground\RaptorBackground.csproj", "{789CE28F-C6A0-42E3-B454-8C58C47416F8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{9DC83D9F-395B-495E-AF10-C03C5520DC21}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{285A1337-D423-4321-BC20-B02C4E3DB8F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{285A1337-D423-4321-BC20-B02C4E3DB8F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{285A1337-D423-4321-BC20-B02C4E3DB8F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{285A1337-D423-4321-BC20-B02C4E3DB8F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{789CE28F-C6A0-42E3-B454-8C58C47416F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{789CE28F-C6A0-42E3-B454-8C58C47416F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{789CE28F-C6A0-42E3-B454-8C58C47416F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{789CE28F-C6A0-42E3-B454-8C58C47416F8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

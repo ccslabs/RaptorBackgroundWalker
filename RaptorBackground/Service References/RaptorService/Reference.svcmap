@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3df3c08b-1a99-40ae-977e-984721a2c6b3" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://ccs-labs.com:801/RaptorAPI.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="RaptorAPI.xsd" MetadataType="Schema" ID="eaf1fe4e-6aab-4235-baa7-10f24c564be1" SourceId="1" SourceUrl="http://ccs-labs.com:801/RaptorAPI.svc?xsd=xsd0" />
+    <MetadataFile FileName="RaptorAPI.wsdl" MetadataType="Wsdl" ID="b5f98f7f-6a07-4776-876e-7bce25243093" SourceId="1" SourceUrl="http://ccs-labs.com:801/RaptorAPI.svc?wsdl" />
+    <MetadataFile FileName="RaptorAPI1.xsd" MetadataType="Schema" ID="282a990f-39b1-4b9b-9589-9129392d8216" SourceId="1" SourceUrl="http://ccs-labs.com:801/RaptorAPI.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
