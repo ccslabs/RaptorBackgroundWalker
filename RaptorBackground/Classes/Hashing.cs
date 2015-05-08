@@ -10,7 +10,7 @@ namespace RaptorBackground.Classes
     class Hashing
     {
 
-        internal string HashPassword(string password)
+        internal static string HashPassword(string password)
         {
             byte[] hash= null;
             var data = Encoding.UTF8.GetBytes(password);
@@ -22,13 +22,13 @@ namespace RaptorBackground.Classes
             return BytesToString(hash);
         }
 
-        internal string BytesToString(byte[] ba)
+        internal static string BytesToString(byte[] ba)
         {
             string hex = BitConverter.ToString(ba);
             return hex.Replace("-", "").ToUpper();
         }
 
-        internal byte[] StringToBytes(String hex)
+        internal static byte[] StringToBytes(String hex)
         {
             int NumberChars = hex.Length;
             byte[] bytes = new byte[NumberChars / 2];

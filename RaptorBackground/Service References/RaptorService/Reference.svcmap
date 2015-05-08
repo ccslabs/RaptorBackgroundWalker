@@ -25,6 +25,7 @@
     <MetadataFile FileName="RaptorAPI.xsd" MetadataType="Schema" ID="eaf1fe4e-6aab-4235-baa7-10f24c564be1" SourceId="1" SourceUrl="http://ccs-labs.com:801/RaptorAPI.svc?xsd=xsd0" />
     <MetadataFile FileName="RaptorAPI.wsdl" MetadataType="Wsdl" ID="b5f98f7f-6a07-4776-876e-7bce25243093" SourceId="1" SourceUrl="http://ccs-labs.com:801/RaptorAPI.svc?wsdl" />
     <MetadataFile FileName="RaptorAPI1.xsd" MetadataType="Schema" ID="282a990f-39b1-4b9b-9589-9129392d8216" SourceId="1" SourceUrl="http://ccs-labs.com:801/RaptorAPI.svc?xsd=xsd1" />
+    <MetadataFile FileName="RaptorAPI2.xsd" MetadataType="Schema" ID="54b81bff-ffbb-4807-8223-26534432dcdb" SourceId="1" SourceUrl="http://ccs-labs.com:801/RaptorAPI.svc?xsd=xsd2" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

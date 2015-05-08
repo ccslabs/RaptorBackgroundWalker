@@ -262,5 +262,17 @@ namespace RaptorBackground.Properties {
                 this["UserPassword"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string SessionAuthentication {
+            get {
+                return ((string)(this["SessionAuthentication"]));
+            }
+            set {
+                this["SessionAuthentication"] = value;
+            }
+        }
     }
 }

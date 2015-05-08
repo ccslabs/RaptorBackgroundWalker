@@ -28,10 +28,36 @@ namespace RaptorBackground.RaptorService {
         System.Threading.Tasks.Task<bool> RegisterUserAsync(string userName, string userCountry, string emailAddress, string Password);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRaptorAPI/DeleteUser", ReplyAction="http://tempuri.org/IRaptorAPI/DeleteUserResponse")]
-        bool DeleteUser(string userName, string Password);
+        bool DeleteUser(string userName, string Password, string sessionAuthentication);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRaptorAPI/DeleteUser", ReplyAction="http://tempuri.org/IRaptorAPI/DeleteUserResponse")]
-        System.Threading.Tasks.Task<bool> DeleteUserAsync(string userName, string Password);
+        System.Threading.Tasks.Task<bool> DeleteUserAsync(string userName, string Password, string sessionAuthentication);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRaptorAPI/GetLastError", ReplyAction="http://tempuri.org/IRaptorAPI/GetLastErrorResponse")]
+        string GetLastError();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRaptorAPI/GetLastError", ReplyAction="http://tempuri.org/IRaptorAPI/GetLastErrorResponse")]
+        System.Threading.Tasks.Task<string> GetLastErrorAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRaptorAPI/Login", ReplyAction="http://tempuri.org/IRaptorAPI/LoginResponse")]
+        string Login(string userName, string Password);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRaptorAPI/Login", ReplyAction="http://tempuri.org/IRaptorAPI/LoginResponse")]
+        System.Threading.Tasks.Task<string> LoginAsync(string userName, string Password);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRaptorAPI/SendUrlsToClient", ReplyAction="http://tempuri.org/IRaptorAPI/SendUrlsToClientResponse")]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(object[]))]
+        object[] SendUrlsToClient(string SessionAuthentication);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRaptorAPI/SendUrlsToClient", ReplyAction="http://tempuri.org/IRaptorAPI/SendUrlsToClientResponse")]
+        System.Threading.Tasks.Task<object[]> SendUrlsToClientAsync(string SessionAuthentication);
+        
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IRaptorAPI/GetUrlsFromClient")]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(object[]))]
+        void GetUrlsFromClient(object[] alUrls);
+        
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IRaptorAPI/GetUrlsFromClient")]
+        System.Threading.Tasks.Task GetUrlsFromClientAsync(object[] alUrls);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -77,12 +103,44 @@ namespace RaptorBackground.RaptorService {
             return base.Channel.RegisterUserAsync(userName, userCountry, emailAddress, Password);
         }
         
-        public bool DeleteUser(string userName, string Password) {
-            return base.Channel.DeleteUser(userName, Password);
+        public bool DeleteUser(string userName, string Password, string sessionAuthentication) {
+            return base.Channel.DeleteUser(userName, Password, sessionAuthentication);
         }
         
-        public System.Threading.Tasks.Task<bool> DeleteUserAsync(string userName, string Password) {
-            return base.Channel.DeleteUserAsync(userName, Password);
+        public System.Threading.Tasks.Task<bool> DeleteUserAsync(string userName, string Password, string sessionAuthentication) {
+            return base.Channel.DeleteUserAsync(userName, Password, sessionAuthentication);
+        }
+        
+        public string GetLastError() {
+            return base.Channel.GetLastError();
+        }
+        
+        public System.Threading.Tasks.Task<string> GetLastErrorAsync() {
+            return base.Channel.GetLastErrorAsync();
+        }
+        
+        public string Login(string userName, string Password) {
+            return base.Channel.Login(userName, Password);
+        }
+        
+        public System.Threading.Tasks.Task<string> LoginAsync(string userName, string Password) {
+            return base.Channel.LoginAsync(userName, Password);
+        }
+        
+        public object[] SendUrlsToClient(string SessionAuthentication) {
+            return base.Channel.SendUrlsToClient(SessionAuthentication);
+        }
+        
+        public System.Threading.Tasks.Task<object[]> SendUrlsToClientAsync(string SessionAuthentication) {
+            return base.Channel.SendUrlsToClientAsync(SessionAuthentication);
+        }
+        
+        public void GetUrlsFromClient(object[] alUrls) {
+            base.Channel.GetUrlsFromClient(alUrls);
+        }
+        
+        public System.Threading.Tasks.Task GetUrlsFromClientAsync(object[] alUrls) {
+            return base.Channel.GetUrlsFromClientAsync(alUrls);
         }
     }
 }
