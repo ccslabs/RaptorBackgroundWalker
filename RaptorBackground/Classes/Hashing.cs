@@ -10,13 +10,13 @@ namespace RaptorBackground.Classes
     class Hashing
     {
 
-        internal static string HashPassword(string password)
+        internal static string HashString(string password)
         {
-            byte[] hash= null;
+            byte[] hash = null;
             var data = Encoding.UTF8.GetBytes(password);
             using (SHA512 shaM = new SHA512Managed())
             {
-               hash = shaM.ComputeHash(data);
+                hash = shaM.ComputeHash(data);
             }
 
             return BytesToString(hash);
@@ -36,5 +36,17 @@ namespace RaptorBackground.Classes
                 bytes[i / 2] = Convert.ToByte(hex.Substring(i, 2), 16);
             return bytes;
         }
+
+        //public static string HashString(string text)
+        //{
+        //    text = text.ToLowerInvariant().Trim().ToString(); // Ensure that hashing a particular text is always from the same base
+
+        //    string hash = "";
+        //    SHA512 alg = SHA512.Create();
+        //    byte[] result = alg.ComputeHash(Encoding.UTF8.GetBytes(text));
+        //    hash = Encoding.UTF8.GetString(result);
+        //    return hash;
+        //}
+    
     }
 }

@@ -9,106 +9,321 @@
 //------------------------------------------------------------------------------
 
 namespace RaptorBackground.RaptorService {
+    using System.Runtime.Serialization;
+    using System;
     
     
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="RaptorService.IRaptorAPI")]
-    public interface IRaptorAPI {
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="AgentDetails", Namespace="http://schemas.datacontract.org/2004/07/RaptorService")]
+    [System.SerializableAttribute()]
+    public partial class AgentDetails : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRaptorAPI/CheckEmail", ReplyAction="http://tempuri.org/IRaptorAPI/CheckEmailResponse")]
-        bool CheckEmail(string emailAddress);
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRaptorAPI/CheckEmail", ReplyAction="http://tempuri.org/IRaptorAPI/CheckEmailResponse")]
-        System.Threading.Tasks.Task<bool> CheckEmailAsync(string emailAddress);
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AgentJurisdictionField;
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRaptorAPI/RegisterUser", ReplyAction="http://tempuri.org/IRaptorAPI/RegisterUserResponse")]
-        bool RegisterUser(string userName, string userCountry, string emailAddress, string Password);
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AgentLicenseNumberField;
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRaptorAPI/RegisterUser", ReplyAction="http://tempuri.org/IRaptorAPI/RegisterUserResponse")]
-        System.Threading.Tasks.Task<bool> RegisterUserAsync(string userName, string userCountry, string emailAddress, string Password);
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AgentRankField;
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRaptorAPI/DeleteUser", ReplyAction="http://tempuri.org/IRaptorAPI/DeleteUserResponse")]
-        bool DeleteUser(string userName, string Password, string sessionAuthentication);
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private double AgentsTotalContentObjectsFoundField;
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRaptorAPI/DeleteUser", ReplyAction="http://tempuri.org/IRaptorAPI/DeleteUserResponse")]
-        System.Threading.Tasks.Task<bool> DeleteUserAsync(string userName, string Password, string sessionAuthentication);
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<double> AgentsTotalRunTimeField;
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRaptorAPI/GetLastError", ReplyAction="http://tempuri.org/IRaptorAPI/GetLastErrorResponse")]
-        string GetLastError();
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private double AgentsTotalURIsFoundField;
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRaptorAPI/GetLastError", ReplyAction="http://tempuri.org/IRaptorAPI/GetLastErrorResponse")]
-        System.Threading.Tasks.Task<string> GetLastErrorAsync();
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private double AgentsTotalURIsProcessedField;
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRaptorAPI/Login", ReplyAction="http://tempuri.org/IRaptorAPI/LoginResponse")]
-        string Login(string userName, string Password);
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<double> WorldRunTimeField;
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRaptorAPI/Login", ReplyAction="http://tempuri.org/IRaptorAPI/LoginResponse")]
-        System.Threading.Tasks.Task<string> LoginAsync(string userName, string Password);
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRaptorAPI/SendUrlsToClient", ReplyAction="http://tempuri.org/IRaptorAPI/SendUrlsToClientResponse")]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(object[]))]
-        object[] SendUrlsToClient(string SessionAuthentication);
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string AgentJurisdiction {
+            get {
+                return this.AgentJurisdictionField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AgentJurisdictionField, value) != true)) {
+                    this.AgentJurisdictionField = value;
+                    this.RaisePropertyChanged("AgentJurisdiction");
+                }
+            }
+        }
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRaptorAPI/SendUrlsToClient", ReplyAction="http://tempuri.org/IRaptorAPI/SendUrlsToClientResponse")]
-        System.Threading.Tasks.Task<object[]> SendUrlsToClientAsync(string SessionAuthentication);
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string AgentLicenseNumber {
+            get {
+                return this.AgentLicenseNumberField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AgentLicenseNumberField, value) != true)) {
+                    this.AgentLicenseNumberField = value;
+                    this.RaisePropertyChanged("AgentLicenseNumber");
+                }
+            }
+        }
         
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IRaptorAPI/GetUrlsFromClient")]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(object[]))]
-        void GetUrlsFromClient(object[] alUrls);
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string AgentRank {
+            get {
+                return this.AgentRankField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AgentRankField, value) != true)) {
+                    this.AgentRankField = value;
+                    this.RaisePropertyChanged("AgentRank");
+                }
+            }
+        }
         
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IRaptorAPI/GetUrlsFromClient")]
-        System.Threading.Tasks.Task GetUrlsFromClientAsync(object[] alUrls);
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public double AgentsTotalContentObjectsFound {
+            get {
+                return this.AgentsTotalContentObjectsFoundField;
+            }
+            set {
+                if ((this.AgentsTotalContentObjectsFoundField.Equals(value) != true)) {
+                    this.AgentsTotalContentObjectsFoundField = value;
+                    this.RaisePropertyChanged("AgentsTotalContentObjectsFound");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<double> AgentsTotalRunTime {
+            get {
+                return this.AgentsTotalRunTimeField;
+            }
+            set {
+                if ((this.AgentsTotalRunTimeField.Equals(value) != true)) {
+                    this.AgentsTotalRunTimeField = value;
+                    this.RaisePropertyChanged("AgentsTotalRunTime");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public double AgentsTotalURIsFound {
+            get {
+                return this.AgentsTotalURIsFoundField;
+            }
+            set {
+                if ((this.AgentsTotalURIsFoundField.Equals(value) != true)) {
+                    this.AgentsTotalURIsFoundField = value;
+                    this.RaisePropertyChanged("AgentsTotalURIsFound");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public double AgentsTotalURIsProcessed {
+            get {
+                return this.AgentsTotalURIsProcessedField;
+            }
+            set {
+                if ((this.AgentsTotalURIsProcessedField.Equals(value) != true)) {
+                    this.AgentsTotalURIsProcessedField = value;
+                    this.RaisePropertyChanged("AgentsTotalURIsProcessed");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<double> WorldRunTime {
+            get {
+                return this.WorldRunTimeField;
+            }
+            set {
+                if ((this.WorldRunTimeField.Equals(value) != true)) {
+                    this.WorldRunTimeField = value;
+                    this.RaisePropertyChanged("WorldRunTime");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="UrlError", Namespace="http://schemas.datacontract.org/2004/07/RaptorService")]
+    [System.SerializableAttribute()]
+    public partial class UrlError : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CurrentUrlField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int ErrorCodeField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CurrentUrl {
+            get {
+                return this.CurrentUrlField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CurrentUrlField, value) != true)) {
+                    this.CurrentUrlField = value;
+                    this.RaisePropertyChanged("CurrentUrl");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int ErrorCode {
+            get {
+                return this.ErrorCodeField;
+            }
+            set {
+                if ((this.ErrorCodeField.Equals(value) != true)) {
+                    this.ErrorCodeField = value;
+                    this.RaisePropertyChanged("ErrorCode");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IRaptorAPIChannel : RaptorBackground.RaptorService.IRaptorAPI, System.ServiceModel.IClientChannel {
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="RaptorService.IRaptorService", SessionMode=System.ServiceModel.SessionMode.Required)]
+    public interface IRaptorService {
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRaptorService/GetLastError", ReplyAction="http://tempuri.org/IRaptorService/GetLastErrorResponse")]
+        string GetLastError();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRaptorService/GetLastError", ReplyAction="http://tempuri.org/IRaptorService/GetLastErrorResponse")]
+        System.Threading.Tasks.Task<string> GetLastErrorAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRaptorService/Login", ReplyAction="http://tempuri.org/IRaptorService/LoginResponse")]
+        bool Login(string name, string passwordHash);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRaptorService/Login", ReplyAction="http://tempuri.org/IRaptorService/LoginResponse")]
+        System.Threading.Tasks.Task<bool> LoginAsync(string name, string passwordHash);
+        
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, IsTerminating=true, IsInitiating=false, Action="http://tempuri.org/IRaptorService/LogOff")]
+        void LogOff();
+        
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, IsTerminating=true, IsInitiating=false, Action="http://tempuri.org/IRaptorService/LogOff")]
+        System.Threading.Tasks.Task LogOffAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(IsInitiating=false, Action="http://tempuri.org/IRaptorService/DeleteUser", ReplyAction="http://tempuri.org/IRaptorService/DeleteUserResponse")]
+        bool DeleteUser();
+        
+        [System.ServiceModel.OperationContractAttribute(IsInitiating=false, Action="http://tempuri.org/IRaptorService/DeleteUser", ReplyAction="http://tempuri.org/IRaptorService/DeleteUserResponse")]
+        System.Threading.Tasks.Task<bool> DeleteUserAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRaptorService/GetDetails", ReplyAction="http://tempuri.org/IRaptorService/GetDetailsResponse")]
+        RaptorBackground.RaptorService.AgentDetails GetDetails();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRaptorService/GetDetails", ReplyAction="http://tempuri.org/IRaptorService/GetDetailsResponse")]
+        System.Threading.Tasks.Task<RaptorBackground.RaptorService.AgentDetails> GetDetailsAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRaptorService/SendUrls", ReplyAction="http://tempuri.org/IRaptorService/SendUrlsResponse")]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RaptorBackground.RaptorService.AgentDetails))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RaptorBackground.RaptorService.UrlError))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(object[]))]
+        object[] SendUrls();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRaptorService/SendUrls", ReplyAction="http://tempuri.org/IRaptorService/SendUrlsResponse")]
+        System.Threading.Tasks.Task<object[]> SendUrlsAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IRaptorService/SendError")]
+        void SendError(RaptorBackground.RaptorService.UrlError uE);
+        
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IRaptorService/SendError")]
+        System.Threading.Tasks.Task SendErrorAsync(RaptorBackground.RaptorService.UrlError uE);
+        
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IRaptorService/ReceiveUrls")]
+        void ReceiveUrls(string url, string urlHash, string sourceUrl, bool IsContentObject, float ErrorCode);
+        
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IRaptorService/ReceiveUrls")]
+        System.Threading.Tasks.Task ReceiveUrlsAsync(string url, string urlHash, string sourceUrl, bool IsContentObject, float ErrorCode);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRaptorService/RegisterUser", ReplyAction="http://tempuri.org/IRaptorService/RegisterUserResponse")]
+        bool RegisterUser(string name, string country, string emailAddress, string passwordHash);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRaptorService/RegisterUser", ReplyAction="http://tempuri.org/IRaptorService/RegisterUserResponse")]
+        System.Threading.Tasks.Task<bool> RegisterUserAsync(string name, string country, string emailAddress, string passwordHash);
+        
+        [System.ServiceModel.OperationContractAttribute(IsTerminating=true, Action="http://tempuri.org/IRaptorService/CheckEmailAddressIsFree", ReplyAction="http://tempuri.org/IRaptorService/CheckEmailAddressIsFreeResponse")]
+        bool CheckEmailAddressIsFree(string emailAddress);
+        
+        [System.ServiceModel.OperationContractAttribute(IsTerminating=true, Action="http://tempuri.org/IRaptorService/CheckEmailAddressIsFree", ReplyAction="http://tempuri.org/IRaptorService/CheckEmailAddressIsFreeResponse")]
+        System.Threading.Tasks.Task<bool> CheckEmailAddressIsFreeAsync(string emailAddress);
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public interface IRaptorServiceChannel : RaptorBackground.RaptorService.IRaptorService, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class RaptorAPIClient : System.ServiceModel.ClientBase<RaptorBackground.RaptorService.IRaptorAPI>, RaptorBackground.RaptorService.IRaptorAPI {
+    public partial class RaptorServiceClient : System.ServiceModel.ClientBase<RaptorBackground.RaptorService.IRaptorService>, RaptorBackground.RaptorService.IRaptorService {
         
-        public RaptorAPIClient() {
+        public RaptorServiceClient() {
         }
         
-        public RaptorAPIClient(string endpointConfigurationName) : 
+        public RaptorServiceClient(string endpointConfigurationName) : 
                 base(endpointConfigurationName) {
         }
         
-        public RaptorAPIClient(string endpointConfigurationName, string remoteAddress) : 
+        public RaptorServiceClient(string endpointConfigurationName, string remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public RaptorAPIClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public RaptorServiceClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public RaptorAPIClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public RaptorServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
-        }
-        
-        public bool CheckEmail(string emailAddress) {
-            return base.Channel.CheckEmail(emailAddress);
-        }
-        
-        public System.Threading.Tasks.Task<bool> CheckEmailAsync(string emailAddress) {
-            return base.Channel.CheckEmailAsync(emailAddress);
-        }
-        
-        public bool RegisterUser(string userName, string userCountry, string emailAddress, string Password) {
-            return base.Channel.RegisterUser(userName, userCountry, emailAddress, Password);
-        }
-        
-        public System.Threading.Tasks.Task<bool> RegisterUserAsync(string userName, string userCountry, string emailAddress, string Password) {
-            return base.Channel.RegisterUserAsync(userName, userCountry, emailAddress, Password);
-        }
-        
-        public bool DeleteUser(string userName, string Password, string sessionAuthentication) {
-            return base.Channel.DeleteUser(userName, Password, sessionAuthentication);
-        }
-        
-        public System.Threading.Tasks.Task<bool> DeleteUserAsync(string userName, string Password, string sessionAuthentication) {
-            return base.Channel.DeleteUserAsync(userName, Password, sessionAuthentication);
         }
         
         public string GetLastError() {
@@ -119,28 +334,76 @@ namespace RaptorBackground.RaptorService {
             return base.Channel.GetLastErrorAsync();
         }
         
-        public string Login(string userName, string Password) {
-            return base.Channel.Login(userName, Password);
+        public bool Login(string name, string passwordHash) {
+            return base.Channel.Login(name, passwordHash);
         }
         
-        public System.Threading.Tasks.Task<string> LoginAsync(string userName, string Password) {
-            return base.Channel.LoginAsync(userName, Password);
+        public System.Threading.Tasks.Task<bool> LoginAsync(string name, string passwordHash) {
+            return base.Channel.LoginAsync(name, passwordHash);
         }
         
-        public object[] SendUrlsToClient(string SessionAuthentication) {
-            return base.Channel.SendUrlsToClient(SessionAuthentication);
+        public void LogOff() {
+            base.Channel.LogOff();
         }
         
-        public System.Threading.Tasks.Task<object[]> SendUrlsToClientAsync(string SessionAuthentication) {
-            return base.Channel.SendUrlsToClientAsync(SessionAuthentication);
+        public System.Threading.Tasks.Task LogOffAsync() {
+            return base.Channel.LogOffAsync();
         }
         
-        public void GetUrlsFromClient(object[] alUrls) {
-            base.Channel.GetUrlsFromClient(alUrls);
+        public bool DeleteUser() {
+            return base.Channel.DeleteUser();
         }
         
-        public System.Threading.Tasks.Task GetUrlsFromClientAsync(object[] alUrls) {
-            return base.Channel.GetUrlsFromClientAsync(alUrls);
+        public System.Threading.Tasks.Task<bool> DeleteUserAsync() {
+            return base.Channel.DeleteUserAsync();
+        }
+        
+        public RaptorBackground.RaptorService.AgentDetails GetDetails() {
+            return base.Channel.GetDetails();
+        }
+        
+        public System.Threading.Tasks.Task<RaptorBackground.RaptorService.AgentDetails> GetDetailsAsync() {
+            return base.Channel.GetDetailsAsync();
+        }
+        
+        public object[] SendUrls() {
+            return base.Channel.SendUrls();
+        }
+        
+        public System.Threading.Tasks.Task<object[]> SendUrlsAsync() {
+            return base.Channel.SendUrlsAsync();
+        }
+        
+        public void SendError(RaptorBackground.RaptorService.UrlError uE) {
+            base.Channel.SendError(uE);
+        }
+        
+        public System.Threading.Tasks.Task SendErrorAsync(RaptorBackground.RaptorService.UrlError uE) {
+            return base.Channel.SendErrorAsync(uE);
+        }
+        
+        public void ReceiveUrls(string url, string urlHash, string sourceUrl, bool IsContentObject, float ErrorCode) {
+            base.Channel.ReceiveUrls(url, urlHash, sourceUrl, IsContentObject, ErrorCode);
+        }
+        
+        public System.Threading.Tasks.Task ReceiveUrlsAsync(string url, string urlHash, string sourceUrl, bool IsContentObject, float ErrorCode) {
+            return base.Channel.ReceiveUrlsAsync(url, urlHash, sourceUrl, IsContentObject, ErrorCode);
+        }
+        
+        public bool RegisterUser(string name, string country, string emailAddress, string passwordHash) {
+            return base.Channel.RegisterUser(name, country, emailAddress, passwordHash);
+        }
+        
+        public System.Threading.Tasks.Task<bool> RegisterUserAsync(string name, string country, string emailAddress, string passwordHash) {
+            return base.Channel.RegisterUserAsync(name, country, emailAddress, passwordHash);
+        }
+        
+        public bool CheckEmailAddressIsFree(string emailAddress) {
+            return base.Channel.CheckEmailAddressIsFree(emailAddress);
+        }
+        
+        public System.Threading.Tasks.Task<bool> CheckEmailAddressIsFreeAsync(string emailAddress) {
+            return base.Channel.CheckEmailAddressIsFreeAsync(emailAddress);
         }
     }
 }

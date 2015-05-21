@@ -25,7 +25,7 @@ namespace RaptorBackground.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("CornflowerBlue")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Yellow")]
         public global::System.Drawing.Color fctbConOutForeColour {
             get {
                 return ((global::System.Drawing.Color)(this["fctbConOutForeColour"]));
@@ -272,6 +272,162 @@ namespace RaptorBackground.Properties {
             }
             set {
                 this["SessionAuthentication"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("...")]
+        public string UserJurisidiction {
+            get {
+                return ((string)(this["UserJurisidiction"]));
+            }
+            set {
+                this["UserJurisidiction"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("...")]
+        public string UserLicenseNumber {
+            get {
+                return ((string)(this["UserLicenseNumber"]));
+            }
+            set {
+                this["UserLicenseNumber"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("...")]
+        public string UserRank {
+            get {
+                return ((string)(this["UserRank"]));
+            }
+            set {
+                this["UserRank"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("White")]
+        public global::System.Drawing.Color lblForegroundColour {
+            get {
+                return ((global::System.Drawing.Color)(this["lblForegroundColour"]));
+            }
+            set {
+                this["lblForegroundColour"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("...")]
+        public string lblCurrentUrl {
+            get {
+                return ((string)(this["lblCurrentUrl"]));
+            }
+            set {
+                this["lblCurrentUrl"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public string lblContentObjectText {
+            get {
+                return ((string)(this["lblContentObjectText"]));
+            }
+            set {
+                this["lblContentObjectText"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public string lblUrisFoundText {
+            get {
+                return ((string)(this["lblUrisFoundText"]));
+            }
+            set {
+                this["lblUrisFoundText"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public string lblUrisProcessedText {
+            get {
+                return ((string)(this["lblUrisProcessedText"]));
+            }
+            set {
+                this["lblUrisProcessedText"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool PauseCrawling {
+            get {
+                return ((bool)(this["PauseCrawling"]));
+            }
+            set {
+                this["PauseCrawling"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("...")]
+        public string RuntimeSession {
+            get {
+                return ((string)(this["RuntimeSession"]));
+            }
+            set {
+                this["RuntimeSession"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("...")]
+        public string lblWorldRuntimeTextValue {
+            get {
+                return ((string)(this["lblWorldRuntimeTextValue"]));
+            }
+            set {
+                this["lblWorldRuntimeTextValue"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("...")]
+        public string lblTotalRuntimeTextValue {
+            get {
+                return ((string)(this["lblTotalRuntimeTextValue"]));
+            }
+            set {
+                this["lblTotalRuntimeTextValue"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public string lblSessionCountTextValue {
+            get {
+                return ((string)(this["lblSessionCountTextValue"]));
+            }
+            set {
+                this["lblSessionCountTextValue"] = value;
             }
         }
     }

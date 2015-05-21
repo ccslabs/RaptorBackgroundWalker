@@ -1,0 +1,5 @@
+﻿eot
+otf
+ttc
+ttf
+woff

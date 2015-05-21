@@ -1,0 +1,11 @@
+﻿ai
+cdr
+csh
+drw
+emz
+odg
+pic
+sda
+svg
+swf
+wmf

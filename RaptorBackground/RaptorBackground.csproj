@@ -13,6 +13,21 @@
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -54,7 +69,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Downloader.cs" />
     <Compile Include="Classes\Hashing.cs" />
+    <Compile Include="Forms\frmHashString.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmHashString.Designer.cs">
+      <DependentUpon>frmHashString.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmRegister.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +96,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\frmHashString.resx">
+      <DependentUpon>frmHashString.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmRegister.resx">
       <DependentUpon>frmRegister.cs</DependentUpon>
     </EmbeddedResource>
@@ -100,13 +125,22 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Service References\RaptorService\RaptorAPI.wsdl" />
-    <None Include="Service References\RaptorService\RaptorAPI.xsd">
+    <None Include="Service References\RaptorService\item.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\RaptorService\RaptorAPI1.xsd">
+    <None Include="Service References\RaptorService\item1.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\RaptorService\item2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RaptorService\item3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RaptorService\RaptorBackground.RaptorService.AgentDetails.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RaptorService\RaptorService.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -166,19 +200,48 @@
     <WCFMetadataStorage Include="Service References\RaptorService\" />
   </ItemGroup>
   <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\RaptorService\item.disco" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Service References\RaptorService\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\RaptorService\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\RaptorService\RaptorAPI2.xsd">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="Service References\RaptorService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Docs\Dev Ref\AudioFileTypes.txt" />
+    <Content Include="Docs\Dev Ref\BitmapFileTypes.txt" />
+    <Content Include="Docs\Dev Ref\DigitalRAWFileTypes.txt" />
+    <Content Include="Docs\Dev Ref\DocumentFileTypes.txt" />
+    <Content Include="Docs\Dev Ref\FontFileTypes.txt" />
+    <Content Include="Docs\Dev Ref\GraphicsFileTypes.txt" />
+    <Content Include="Docs\Dev Ref\OtherFileTypesNotAddedYet.txt" />
+    <Content Include="Docs\Dev Ref\ThreeDFileTypes.txt" />
+    <Content Include="Docs\Dev Ref\VectorGraphicsFileTypes.txt" />
+    <Content Include="Docs\Dev Ref\VideoFileTypes.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />

@@ -1,0 +1,511 @@
+﻿ azw 	Amazon Kindle eBook file
+ azw3 	Amazon Kindle eBook file
+cbr icon cbr 	Comic Book Archive file or ComicBook Reader file
+cbz icon cbz 	Comic Book Archive file or ComicBook Reader file
+epub icon epub 	Open Publication structure eBook file
+ fb2 	FictionBook eBook file
+ iba 	iBooks Author e-book file
+ ibooks 	iBooks e-book file
+ lit 	Microsoft Reader eBook file
+ mobi 	Mobipocket eBook Format
+pdf icon pdf 	Adobe Portable document format
+Spreadsheets
+numbers icon numbers 	Apple Numbers spreadsheet file
+ods icon ods 	OpenDocument spreadsheet file
+sdc icon sdc 	OpenOffice.org spreadsheet file
+sxc icon sxc 	OpenOffice.org 1.0 spreadsheet file
+xls icon xls 	Microsoft Excel 97 to 2003 workbook file
+xlsm icon xlsm 	Microsoft Excel Open XML macro-enabled workbook file
+xlsx icon xlsx 	Microsoft Excel Open XML workbook file
+Microsoft Office files
+accdb icon accdb 	Microsoft Access main database file
+accdt icon accdt 	Microsoft Access database template file
+doc icon doc 	Microsoft Word 97 to 2003 document file
+docm icon docm 	Microsoft Word Open XML macro-enabled document file
+docx icon docx 	Microsoft Word Open XML document file
+dot icon dot 	Microsoft Word 97 to 2003 document template file
+dotm icon dotm 	Microsoft Word 2007/ 2010 Open XML macro-enabled document template file
+dotx icon dotx 	Microsoft Word XML document template file
+mdb icon mdb 	Microsoft Access database file
+mpd icon mpd 	Microsoft Project database file
+mpp icon mpp 	Microsoft Project plan file
+mpt icon mpt 	Microsoft Project template tile
+one icon one 	Microsoft OneNote document file
+ onepkg 	Microsoft OneNote package file
+pot icon pot 	Microsoft PowerPoint 97 to 2003 template file
+potx icon potx 	Microsoft PowerPoint 2007/2010 Open XML presentation template file
+pps icon pps 	Microsoft PowerPoint 97 to 2003 complete slide show file
+ppsx icon ppsx 	Microsoft PowerPoint 2007/2010 Open XML complete slide show file
+ppt icon ppt 	Microsoft PowerPoint 97 to 2003 presentation file
+pptm icon pptm 	Microsoft PowerPoint macro-enabled Open XML presentation file
+pptx icon pptx 	Microsoft PowerPoint Open XML presentation file
+pst icon pst 	Microsoft Outlook personal storage table file
+pub icon pub 	Microsoft Publisher document file
+snp icon snp 	Microsoft Access report shapshot file
+thmx icon thmx 	Microsoft Office 2007/2010 theme file
+vsd icon vsd 	Microsoft Visio diagram document file
+ vsdx 	Microsoft Visio drawing file
+xls icon xls 	Microsoft Excel 97 to 2003 workbook file
+xlsm icon xlsm 	Microsoft Excel Open XML macro-enabled workbook file
+xlsx icon xlsx 	Microsoft Excel Open XML workbook file
+Game related files
+ big 	Electronic Arts game resource package file
+bik icon bik 	BINK video file
+cab icon cab 	Windows Cabinet Compressed Archive
+ dat 	Game data file
+ hi 	High scores file
+ lng 	Language definition file
+ pak 	Game resource package file
+ res 	Game resource file
+ sav 	Saved game file
+ save 	Doom 3 saved game file
+SC2Replay icon SC2Replay 	Starcraft 2 game replay file
+ scn 	Game scenario file
+ scx 	Game scenario file
+uax icon uax 	Unreal audio package file
+ wotreplay 	World of Tanks battle recording file
+Emulation related files
+ dat 	Game data file
+ nds 	Nintendo DS game ROM image file
+ smc 	Super Nintendo game-console ROM image
+Virtualization software related files
+ ova 	Open Virtual Machine Format single archive file
+ovf icon ovf 	Open Virtualization Format Package
+ pvm 	Parallels Desktop virtual machine file
+vdi icon vdi 	VirtualBox disk image file
+vhd icon vhd 	Virtual Hard Disk file
+vmdk icon vmdk 	VMware virtual disk file
+vmem icon vmem 	VMware virtual machine's paging file
+ vmwarevm 	VMware Fusion virtual machine
+vmx icon vmx 	VMware configuration file
+Internet related files
+ashx icon ashx 	ASP.NET Web Handler file
+asp icon asp 	Active Server Page script page
+aspx icon aspx 	Active Server Page Extended ASP.NET script file
+atom icon atom 	Atom web feed file
+bc icon bc 	BitTorrent unfinished download file
+bc! icon bc! 	Bittorrent unfinished download file
+crdownload icon crdownload 	Google Chrome incomplete download file
+css icon css 	Cascading Style Sheets file
+dlc icon dlc 	JDownloader download link container
+download icon download 	Chrome partial download file
+download icon download 	Mozilla partial download file
+download icon download 	Apple Safari partial download file
+eml icon eml 	Email message file
+flv icon flv 	Flash video file
+ gdoc 	Link to Google Docs web application document
+gif icon gif 	Graphics interchange file format
+ gsheet 	Link to Google Sheets web application spreadsheet document
+ gslides 	Link to Google Slides web application presentation
+htm icon htm 	HTML Hypertext Markup Language web page file
+html icon html 	HTML Hypertext Markup Language web page file
+js icon js 	JavaScript file
+ json 	JavaScript object notation file
+jsp icon jsp 	JAVA Server page file
+mht icon mht 	Mime HTML (MHTML) file
+opml icon opml 	OPML Outline Processor Markup Language file format
+ part 	Partial download file
+ partial 	Microsoft Internet Explorer 9 partial download file
+php icon php 	PHP script or page
+png icon png 	Portable Network Graphic file
+ rss 	Really Simple Syndication - RSS file format
+swf icon swf 	ShockWave Flash, Animated vector format for the Internet
+torrent icon torrent 	BitTorrent information file
+webm icon webm 	Matroska WebM video file
+ webp 	Google image file format
+xap icon xap 	Microsoft Windows Phone and Microsoft Silverlight application package file
+xhtml icon xhtml 	Extensible HTML file
+xml icon xml 	XML document file
+xsd icon xsd 	XML schema description file
+xsl icon xsl 	XML stylesheet file
+xslt icon xslt 	XSL transform file
+Email files
+dbx icon dbx 	Microsoft Outlook Express e-mail folder file
+eml icon eml 	Email message file
+ ldif 	LDIF address book interchange format file
+mht icon mht 	Mime HTML (MHTML) file
+ msg 	Saved email message
+pst icon pst 	Microsoft Outlook personal storage table file
+vcf icon vcf 	vCard file
+File extensions blocked by mail clients
+app icon app 	MAC application package or core system service file
+asp icon asp 	Active Server Page script page
+bat icon bat 	Batch file (executable)
+chm icon chm 	Microsoft compiled HTML help file
+cnt icon cnt 	Help Contents file
+com icon com 	Command executable file
+cpl icon cpl 	Microsoft Windows Control Panel file
+eml icon eml 	Email message file
+exe icon exe 	Program executable file
+gadget icon gadget 	Windows sidebar gadget file
+inf icon inf 	Windows installation script file
+js icon js 	JavaScript file
+lnk icon lnk 	Windows Shortcut file
+mdb icon mdb 	Microsoft Access database file
+msi icon msi 	Microsoft Windows Installer installation package
+ prg 	Program file
+reg icon reg 	Windows registry data file
+scr icon scr 	Microsoft Windows screensaver file
+shs icon shs 	Microsoft Windows Shell Scrap Object file
+tmp icon tmp 	Temporary file
+vbs icon vbs 	Visual Basic script file
+Possibly dangerous files
+bat icon bat 	Batch file (executable)
+bin icon bin 	CD/DVD binary image file
+chm icon chm 	Microsoft compiled HTML help file
+class icon class 	Java bytecode class file
+com icon com 	Command executable file
+cpl icon cpl 	Microsoft Windows Control Panel file
+dll icon dll 	Dynamic Link Library file
+drv icon drv 	Microsoft Windows device driver
+eml icon eml 	Email message file
+exe icon exe 	Program executable file
+ini icon ini 	Text configuration file
+jar icon jar 	Compressed archive file package for Java classes and data file
+js icon js 	JavaScript file
+lnk icon lnk 	Windows Shortcut file
+ocx icon ocx 	ActiveX control file
+pcx icon pcx 	Paintbrush bitmap image
+scr icon scr 	Microsoft Windows screensaver file
+shs icon shs 	Microsoft Windows Shell Scrap Object file
+swf icon swf 	ShockWave Flash, Animated vector format for the Internet
+ sys 	System file
+vbs icon vbs 	Visual Basic script file
+vxd icon vxd 	Microsoft Windows virtual device driver
+wmf icon wmf 	Windows metafile format
+Archives
+001 icon 001 	Compressed file from a multi-volume archive (part 1)
+002 icon 002 	Compressed file from a multi-volume archive (part 2)
+003 icon 003 	Compressed file from a multi-volume archive (part 3)
+004 icon 004 	Compressed file from a multi-volume archive (part 4)
+005 icon 005 	Compressed file from a multi-volume archive (part 5)
+006 icon 006 	Compressed file from a multi-volume archive (part 6)
+007 icon 007 	Compressed file from a multi-volume archive (part 7)
+008 icon 008 	Compressed file from a multi-volume archive (part 8)
+009 icon 009 	Compressed file from a multi-volume archive (part 9)
+010 icon 010 	Compressed file from a multi-volume archive (part 10)
+7z icon 7z 	7-ZIP compressed 7z archive file
+7z.001 icon 7z.001 	Split Multi-volume 7-ZIP compressed file archive (part 1)
+7z.002 icon 7z.002 	Split Multi-volume 7-ZIP compressed file archive (part 2)
+7z.003 icon 7z.003 	Split Multi-volume 7-ZIP compressed file archive (part 3)
+7zip icon 7zip 	7-Zip 7z compressed archive file
+a00 icon a00 	Split Multi-volume ARJ compressed file archive (part 2)
+a01 icon a01 	Split Multi-volume ARJ compressed file archive (part 3)
+a02 icon a02 	Split Multi-volume ARJ compressed file archive (part 4)
+a03 icon a03 	Split Multi-volume ARJ compressed file archive (part 5)
+a04 icon a04 	Split Multi-volume ARJ compressed file archive (part 6)
+a05 icon a05 	Split Multi-volume ARJ compressed file archive (part 7)
+ace icon ace 	WinACE Compressed ace archive file
+air icon air 	Adobe AIR rich Internet applications
+apk icon apk 	Google Android application package file
+ arc 	ARC lossless data compression and archive format
+arj icon arj 	ARJ Compressed archive file
+asec icon asec 	Google Android encrypted application package file
+ bar 	BlackBerry OS 10 application installation package
+ bin 	Macbinary II encoded file
+c00 icon c00 	Split Multi-volume ACE compressed file archive
+c01 icon c01 	Split Multi-volume ACE compressed file archive
+c02 icon c02 	Split Multi-volume ACE compressed file archive
+c03 icon c03 	Split Multi-volume ACE compressed file archive
+cab icon cab 	Windows Cabinet Compressed Archive
+cbr icon cbr 	Comic Book Archive file or ComicBook Reader file
+cbz icon cbz 	Comic Book Archive file or ComicBook Reader file
+cso icon cso 	CISO compressed ISO file
+deb icon deb 	Debian Linux package file
+dlc icon dlc 	JDownloader download link container
+gz icon gz 	GZIP compressed archive file
+ gzip 	GNU ZIP gzip compressed archive file
+hqx icon hqx 	Macintosh BinHex archive
+inv icon inv 	Microsoft Windows Update file
+ipa icon ipa 	Apple iOS application file
+isz icon isz 	UltraISO compressed disk image file
+jar icon jar 	Compressed archive file package for Java classes and data file
+msu icon msu 	Microsoft Update Standalone Package file
+nbh icon nbh 	HTC ROM update utility ROM image file
+ pak 	Game resource package file
+part1.exe icon part1.exe 	Split Multi-volume RAR compressed self-extracting file archive (part 1)
+part1.rar icon part1.rar 	Split Multi-volume RAR compressed file archive (part 1)
+part2.rar icon part2.rar 	Split Multi-volume RAR compressed file archive (part 2)
+r00 icon r00 	Split Multi-volume RAR compressed file archive (part 2)
+r01 icon r01 	Split Multi-volume RAR compressed file archive (part 3)
+r02 icon r02 	Split Multi-volume RAR compressed file archive (part 4)
+r03 icon r03 	Split Multi-volume RAR compressed file archive (part 5)
+r04 icon r04 	Split Multi-volume RAR compressed file archive (part 6)
+r05 icon r05 	Split Multi-volume RAR compressed file archive (part 7)
+r06 icon r06 	Split Multi-volume RAR compressed file archive (part 8)
+r07 icon r07 	Split Multi-volume RAR compressed file archive (part 9)
+r08 icon r08 	Split Multi-volume RAR compressed file archive (part 10)
+r09 icon r09 	Split Multi-volume RAR compressed file archive (part 11)
+r10 icon r10 	Split Multi-volume RAR compressed file archive (part 12)
+rar icon rar 	WinRAR RAR compressed archive
+rpm icon rpm 	Linux package manager file
+ sis 	Symbian installation file
+ sisx 	Symbian OS program installation executable file
+sit icon sit 	StuffIt Expander archive format file
+ sitd 	StuffIT archive file
+ sitx 	StuffIt archive file
+tar icon tar 	Unix standard Archive format, Tape Archive
+tar.gz icon tar.gz 	Old version Gzip compressed TAR Archive
+tgz icon tgz 	Gzip compressed TAR archive
+uax icon uax 	Unreal audio package file
+webarchive icon webarchive 	Apple Safari web archive file
+xap icon xap 	Microsoft Windows Phone and Microsoft Silverlight application package file
+z01 icon z01 	Split Multi-volume ZIP compressed file archive (part 2)
+z02 icon z02 	Split Multi-volume ZIP compressed file archive (part 3)
+z03 icon z03 	Split Multi-volume ZIP compressed file archive (part 4)
+z04 icon z04 	Split Multi-volume ZIP compressed file archive (part 5)
+z05 icon z05 	Split Multi-volume ZIP compressed file archive (part 6)
+zip icon zip 	WinZIP Compressed ZIP archive file
+Backup files
+ bak 	Backup file
+ bbb 	BlackBerry backup (post 2012) file
+bkf icon bkf 	Microsoft backup file
+ bkp 	Backup file
+ dbk 	Sony Ericsson mobile phone backup file
+gho icon gho 	Norton Ghost backup image file
+ ipd 	BlackBerry backup (pre 2012) file
+iso icon iso 	CD/DVD/HD DVD/Blu-ray disc ISO binary image file
+json icon json 	Mozilla Firefox bookmark backup file
+mdbackup icon mdbackup 	Apple iPhone backup file
+nba icon nba 	Nero BackItUp archive file
+ nbf 	Backup NOW! backup archive file
+nbu icon nbu 	Nokia PC Suite 6.82+ backup file
+nco icon nco 	Nero BackItUp compressed backup file
+nrg icon nrg 	Nero-Burning ROM CD or DVD image file
+ old 	Backup file
+rar icon rar 	WinRAR RAR compressed archive
+sbf icon sbf 	Google Android mobile phone backup file
+ sbu 	Samsung Kies backup file
+ spb 	Samsung Kies phone contacts library
+ tib 	Acronis True Image backup disk image file
+wbcat icon wbcat 	Microsoft Windows backup information file
+zip icon zip 	WinZIP Compressed ZIP archive file
+Disk images
+000 icon 000 	IsoBuster CD/DVD image file data recovery
+bin icon bin 	CD/DVD binary image file
+ccd icon ccd 	CloneCD disk image
+cue icon cue 	Cue sheet description file
+daa icon daa 	PowerISO Direct-Access-Archive file
+dao icon dao 	Disk at Once CD/DVD image file
+dmg icon dmg 	Apple Mac OS X disk image file
+img icon img 	CloneCD image file
+img icon img 	Floppy Image image file
+iso icon iso 	CD/DVD/HD DVD/Blu-ray disc ISO binary image file
+isz icon isz 	UltraISO compressed disk image file
+mdf icon mdf 	Alcohol 120% disc image file format
+mds icon mds 	Alcohol 120% Image file (media descriptor file) format
+mdx icon mdx 	Media Data eXtended image file
+nrg icon nrg 	Nero-Burning ROM CD or DVD image file
+tao icon tao 	TAO Track at Once CD/DVD image file
+ tc 	TrueCrypt disk volume file
+toast icon toast 	Roxio Toast disk image file
+uif icon uif 	MagicISO Universal Image Format
+vcd icon vcd 	Virtual CD-ROM CD image file
+Mobile phone related files
+apk icon apk 	Google Android application package file
+asec icon asec 	Google Android encrypted application package file
+ bbb 	BlackBerry backup (post 2012) file
+ crypt 	WhatsApp Messenger encrypted message database backup file
+ipa icon ipa 	Apple iOS application file
+ ipd 	BlackBerry backup (pre 2012) file
+ipsw icon ipsw 	iPhone, iPad or iPod Touch iOS software firmware update file
+mdbackup icon mdbackup 	Apple iPhone backup file
+nbh icon nbh 	HTC ROM update utility ROM image file
+nbu icon nbu 	Nokia PC Suite 6.82+ backup file
+ npf 	Samsung PC Studio phone book backup file
+ pkpass 	Apple Passbook pass file
+rem icon rem 	BlackBerry encrypted data file
+ rsc 	Resource file
+sbf icon sbf 	Google Android mobile phone backup file
+ sis 	Symbian installation file
+ sisx 	Symbian OS program installation executable file
+thm icon thm 	Sony Ericsson mobile phone theme file
+vcf icon vcf 	vCard file
+xap icon xap 	Microsoft Windows Phone and Microsoft Silverlight application package file
+Mobile ringtones
+aac icon aac 	Advanced audio coding file
+aiff icon aiff 	Audio Interchange File Format
+amr icon amr 	Adaptive Multi-Rate compressed audio file
+m4a icon m4a 	MPEG-4 compressed audio file
+midi icon midi 	MIDI-sequention sound file
+mp3 icon mp3 	Compressed audio and music file, mp3 songs or ringtones
+wav icon wav 	WAVe PCM Sound, standard Windows sound format
+wma icon wma 	Windows Media Audio
+Financial files
+ gdb 	Database file
+ofx icon ofx 	Open Financial Exchange format
+ pkpass 	Apple Passbook pass file
+qif icon qif 	Quicken Interchange format file
+Database related files
+accdb icon accdb 	Microsoft Access main database file
+accdt icon accdt 	Microsoft Access database template file
+csv icon csv 	Comma Separated Value file
+ db 	Database file
+ dbf 	Common database file
+fdb icon fdb 	Database file
+ gdb 	Database file
+ idx 	Index file
+mdb icon mdb 	Microsoft Access database file
+ mdf 	Microsoft SQL Server master database file format
+msmessagestore icon msmessagestore 	Windows Mail message information database file
+ sdf 	SQL Server compact edition database file
+sql icon sql 	Structured Query Language Data SQL file
+ sqlite 	SQLite database file
+wdb icon wdb 	Microsoft Works database file
+xml icon xml 	XML document file
+GIS, GPS, map file types
+ gpx 	GPS eXchange format
+ kml 	Google Earth Keyhole Markup language file
+kmz icon kmz 	Compressed Keyhole Markup Language (Google Earth) file
+ map 	Geographical map file
+Program executables
+air icon air 	Adobe AIR rich Internet applications
+app icon app 	MAC application package or core system service file
+ application 	ClickOnce deployment manifest file
+ appx 	Microsoft AppX application package file
+bat icon bat 	Batch file (executable)
+com icon com 	Command executable file
+cpl icon cpl 	Microsoft Windows Control Panel file
+deb icon deb 	Debian Linux package file
+dll icon dll 	Dynamic Link Library file
+ elf 	ELF executable file
+exe icon exe 	Program executable file
+jar icon jar 	Compressed archive file package for Java classes and data file
+js icon js 	JavaScript file
+lnk icon lnk 	Windows Shortcut file
+msi icon msi 	Microsoft Windows Installer installation package
+part1.exe icon part1.exe 	Split Multi-volume RAR compressed self-extracting file archive (part 1)
+ prg 	Program file
+rpm icon rpm 	Linux package manager file
+shs icon shs 	Microsoft Windows Shell Scrap Object file
+vbs icon vbs 	Visual Basic script file
+xap icon xap 	Microsoft Windows Phone and Microsoft Silverlight application package file
+System file types
+ alx 	BlackBerry application loader file
+blf icon blf 	Microsoft Windows registry file
+cpl icon cpl 	Microsoft Windows Control Panel file
+ dat 	Program data file
+dll icon dll 	Dynamic Link Library file
+drv icon drv 	Microsoft Windows device driver
+evtx icon evtx 	Microsoft Windows Vista, Windows 7, Windows 8 event log file
+gadget icon gadget 	Windows sidebar gadget file
+ idx 	Index file
+inf icon inf 	Windows installation script file
+kext icon kext 	Apple Mac OS X Kernel extension file
+key icon key 	Microsoft Windows 7 registry key
+mui icon mui 	MultiLanguage Windows resource file
+ocx icon ocx 	ActiveX control file
+reg icon reg 	Windows registry data file
+scr icon scr 	Microsoft Windows screensaver file
+sfcache icon sfcache 	ReadyBoost cache file
+ swp 	Swap file
+ sys 	System file
+vxd icon vxd 	Microsoft Windows virtual device driver
+Various presets or theme files
+ alx 	BlackBerry application loader file
+ccd icon ccd 	CloneCD disk image
+ cnf 	Network configuration file
+contact icon contact 	Microsoft Windows contact file
+cue icon cue 	Cue sheet description file
+ deskthemepack 	Microsoft Windows theme pack file
+do icon do 	Java Servlet file
+ics icon ics 	iCalendar calendar file format (Microsoft Outlook, Apple iCal)
+ifo icon ifo 	DVD movie information file format
+ini icon ini 	Text configuration file
+lnk icon lnk 	Windows Shortcut file
+lrtemplate icon lrtemplate 	Adobe Photoshop Lightroom preset settings file
+m3u icon m3u 	MP3 songs playlist file
+m3u8 icon m3u8 	UTF-8 M3U playlist file
+mui icon mui 	MultiLanguage Windows resource file
+plist icon plist 	Apple property list XML file
+ pro 	Profile file
+ skn 	Skin file
+svp icon svp 	Virtual DJ visualization effects
+ template 	Template file
+theme icon theme 	Windows Desktop Theme file
+themepack icon themepack 	Microsoft Windows 7 theme pack file
+thm icon thm 	Sony Ericsson mobile phone theme file
+thmx icon thmx 	Microsoft Office 2007/2010 theme file
+ trm 	Terminal settings file
+wba icon wba 	WindowBlinds Desktop visual style
+Plugins
+ape icon ape 	Winamp plug-ins AVS file
+crx icon crx 	Google Chrome extension installer file format
+safariextz icon safariextz 	Apple Safari extension file
+xpi icon xpi 	Firefox browser extension file
+Source code files
+asm icon asm 	Assembler source code file
+asp icon asp 	Active Server Page script page
+aspx icon aspx 	Active Server Page Extended ASP.NET script file
+bat icon bat 	Batch file (executable)
+do icon do 	Java Servlet file
+htm icon htm 	HTML Hypertext Markup Language web page file
+ inc 	Include file
+jad icon jad 	Java application descriptor file
+java icon java 	Java language source code file
+js icon js 	JavaScript file
+ json 	JavaScript object notation file
+jsp icon jsp 	JAVA Server page file
+ lib 	Microsoft Linker input library file
+ o 	Object file
+php icon php 	PHP script or page
+rc icon rc 	Microsoft Visual Studio Visual C/C++ resource script file
+ rss 	Really Simple Syndication - RSS file format
+scpt icon scpt 	AppleScript script file
+ src 	Generally source code file
+vbs icon vbs 	Visual Basic script file
+xml icon xml 	XML document file
+xsd icon xsd 	XML schema description file
+xsl icon xsl 	XML stylesheet file
+xslt icon xslt 	XSL transform file
+Configuration files
+ cfg 	Configuration files
+ cnf 	Network configuration file
+ini icon ini 	Text configuration file
+ pro 	Profile file
+reg icon reg 	Windows registry data file
+ usr 	User specific settings file
+Encrypted files
+asec icon asec 	Google Android encrypted application package file
+ crypt 	WhatsApp Messenger encrypted message database backup file
+ ksd 	KeepSafe encrypted file
+ pfx 	Certificate file
+ pkpass 	Apple Passbook pass file
+rem icon rem 	BlackBerry encrypted data file
+ tc 	TrueCrypt disk volume file
+Temporary files
+ !ut 	uTorrent incomplete download file
+ adadownload 	Adobe Download Assistant partially completed download file
+bc icon bc 	BitTorrent unfinished download file
+bc! icon bc! 	Bittorrent unfinished download file
+blf icon blf 	Microsoft Windows registry file
+crdownload icon crdownload 	Google Chrome incomplete download file
+download icon download 	Apple Safari partial download file
+download icon download 	Chrome partial download file
+download icon download 	Mozilla partial download file
+ part 	Partial download file
+ partial 	Microsoft Internet Explorer 9 partial download file
+ temp 	Temporary file
+tmp icon tmp 	Temporary file
+Various file types
+3dr icon 3dr 	3DMark result
+ cal 	Calendar file
+class icon class 	Java bytecode class file
+ dat 	Program data file
+ dct 	Spell checking dictionary file
+ dic 	Dictionary file
+ eng 	English language localization file
+ gbk 	Delphi runimage iblocal examples file
+jad icon jad 	Java application descriptor file
+ lng 	Language definition file
+log icon log 	Log file
+ md5 	Checksum file
+ prj 	Project file
+ rec 	Recorded file
+ ref 	Reference file
+ rep 	Generally report file
+ rsc 	Resource file
+ tbl 	Table file
+ tpl 	Generally a template file
+ upd 	Update file
+ upg 	Firmware upgrade file

@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="fctbConOutForeColour" Type="System.Drawing.Color" Scope="User">
-      <Value Profile="(Default)">CornflowerBlue</Value>
+      <Value Profile="(Default)">Yellow</Value>
     </Setting>
     <Setting Name="fctbBackgroundColour" Type="System.Drawing.Color" Scope="User">
       <Value Profile="(Default)">Transparent</Value>
@@ -64,6 +64,45 @@
     </Setting>
     <Setting Name="SessionAuthentication" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="UserJurisidiction" Type="System.String" Scope="User">
+      <Value Profile="(Default)">...</Value>
+    </Setting>
+    <Setting Name="UserLicenseNumber" Type="System.String" Scope="User">
+      <Value Profile="(Default)">...</Value>
+    </Setting>
+    <Setting Name="UserRank" Type="System.String" Scope="User">
+      <Value Profile="(Default)">...</Value>
+    </Setting>
+    <Setting Name="lblForegroundColour" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">White</Value>
+    </Setting>
+    <Setting Name="lblCurrentUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">...</Value>
+    </Setting>
+    <Setting Name="lblContentObjectText" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="lblUrisFoundText" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="lblUrisProcessedText" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="PauseCrawling" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="RuntimeSession" Type="System.String" Scope="User">
+      <Value Profile="(Default)">...</Value>
+    </Setting>
+    <Setting Name="lblWorldRuntimeTextValue" Type="System.String" Scope="User">
+      <Value Profile="(Default)">...</Value>
+    </Setting>
+    <Setting Name="lblTotalRuntimeTextValue" Type="System.String" Scope="User">
+      <Value Profile="(Default)">...</Value>
+    </Setting>
+    <Setting Name="lblSessionCountTextValue" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
     </Setting>
   </Settings>
 </SettingsFile>
