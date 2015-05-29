@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace RaptorBackground.Classes
 {
-    class Hashing
+    internal class Hashing
     {
-
         internal static string HashString(string password)
         {
             byte[] hash = null;
@@ -47,6 +43,5 @@ namespace RaptorBackground.Classes
         //    hash = Encoding.UTF8.GetString(result);
         //    return hash;
         //}
-    
     }
 }

@@ -259,44 +259,50 @@ namespace RaptorBackground.RaptorService {
         [System.ServiceModel.OperationContractAttribute(IsInitiating=false, Action="http://tempuri.org/IRaptorService/DeleteUser", ReplyAction="http://tempuri.org/IRaptorService/DeleteUserResponse")]
         System.Threading.Tasks.Task<bool> DeleteUserAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRaptorService/GetDetails", ReplyAction="http://tempuri.org/IRaptorService/GetDetailsResponse")]
+        [System.ServiceModel.OperationContractAttribute(IsInitiating=false, Action="http://tempuri.org/IRaptorService/GetDetails", ReplyAction="http://tempuri.org/IRaptorService/GetDetailsResponse")]
         RaptorBackground.RaptorService.AgentDetails GetDetails();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRaptorService/GetDetails", ReplyAction="http://tempuri.org/IRaptorService/GetDetailsResponse")]
+        [System.ServiceModel.OperationContractAttribute(IsInitiating=false, Action="http://tempuri.org/IRaptorService/GetDetails", ReplyAction="http://tempuri.org/IRaptorService/GetDetailsResponse")]
         System.Threading.Tasks.Task<RaptorBackground.RaptorService.AgentDetails> GetDetailsAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRaptorService/SendUrls", ReplyAction="http://tempuri.org/IRaptorService/SendUrlsResponse")]
+        [System.ServiceModel.OperationContractAttribute(IsInitiating=false, Action="http://tempuri.org/IRaptorService/SendUrls", ReplyAction="http://tempuri.org/IRaptorService/SendUrlsResponse")]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RaptorBackground.RaptorService.AgentDetails))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(RaptorBackground.RaptorService.UrlError))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(object[]))]
         object[] SendUrls();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRaptorService/SendUrls", ReplyAction="http://tempuri.org/IRaptorService/SendUrlsResponse")]
+        [System.ServiceModel.OperationContractAttribute(IsInitiating=false, Action="http://tempuri.org/IRaptorService/SendUrls", ReplyAction="http://tempuri.org/IRaptorService/SendUrlsResponse")]
         System.Threading.Tasks.Task<object[]> SendUrlsAsync();
         
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IRaptorService/SendError")]
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, IsInitiating=false, Action="http://tempuri.org/IRaptorService/SendError")]
         void SendError(RaptorBackground.RaptorService.UrlError uE);
         
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IRaptorService/SendError")]
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, IsInitiating=false, Action="http://tempuri.org/IRaptorService/SendError")]
         System.Threading.Tasks.Task SendErrorAsync(RaptorBackground.RaptorService.UrlError uE);
         
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IRaptorService/ReceiveUrls")]
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, IsInitiating=false, Action="http://tempuri.org/IRaptorService/ReceiveUrls")]
         void ReceiveUrls(string url, string urlHash, string sourceUrl, bool IsContentObject, float ErrorCode);
         
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IRaptorService/ReceiveUrls")]
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, IsInitiating=false, Action="http://tempuri.org/IRaptorService/ReceiveUrls")]
         System.Threading.Tasks.Task ReceiveUrlsAsync(string url, string urlHash, string sourceUrl, bool IsContentObject, float ErrorCode);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRaptorService/RegisterUser", ReplyAction="http://tempuri.org/IRaptorService/RegisterUserResponse")]
+        [System.ServiceModel.OperationContractAttribute(IsInitiating=false, Action="http://tempuri.org/IRaptorService/RegisterUser", ReplyAction="http://tempuri.org/IRaptorService/RegisterUserResponse")]
         bool RegisterUser(string name, string country, string emailAddress, string passwordHash);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IRaptorService/RegisterUser", ReplyAction="http://tempuri.org/IRaptorService/RegisterUserResponse")]
+        [System.ServiceModel.OperationContractAttribute(IsInitiating=false, Action="http://tempuri.org/IRaptorService/RegisterUser", ReplyAction="http://tempuri.org/IRaptorService/RegisterUserResponse")]
         System.Threading.Tasks.Task<bool> RegisterUserAsync(string name, string country, string emailAddress, string passwordHash);
         
-        [System.ServiceModel.OperationContractAttribute(IsTerminating=true, Action="http://tempuri.org/IRaptorService/CheckEmailAddressIsFree", ReplyAction="http://tempuri.org/IRaptorService/CheckEmailAddressIsFreeResponse")]
+        [System.ServiceModel.OperationContractAttribute(IsTerminating=true, IsInitiating=false, Action="http://tempuri.org/IRaptorService/CheckEmailAddressIsFree", ReplyAction="http://tempuri.org/IRaptorService/CheckEmailAddressIsFreeResponse")]
         bool CheckEmailAddressIsFree(string emailAddress);
         
-        [System.ServiceModel.OperationContractAttribute(IsTerminating=true, Action="http://tempuri.org/IRaptorService/CheckEmailAddressIsFree", ReplyAction="http://tempuri.org/IRaptorService/CheckEmailAddressIsFreeResponse")]
+        [System.ServiceModel.OperationContractAttribute(IsTerminating=true, IsInitiating=false, Action="http://tempuri.org/IRaptorService/CheckEmailAddressIsFree", ReplyAction="http://tempuri.org/IRaptorService/CheckEmailAddressIsFreeResponse")]
         System.Threading.Tasks.Task<bool> CheckEmailAddressIsFreeAsync(string emailAddress);
+        
+        [System.ServiceModel.OperationContractAttribute(IsInitiating=false, Action="http://tempuri.org/IRaptorService/Ping", ReplyAction="http://tempuri.org/IRaptorService/PingResponse")]
+        bool Ping();
+        
+        [System.ServiceModel.OperationContractAttribute(IsInitiating=false, Action="http://tempuri.org/IRaptorService/Ping", ReplyAction="http://tempuri.org/IRaptorService/PingResponse")]
+        System.Threading.Tasks.Task<bool> PingAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -404,6 +410,14 @@ namespace RaptorBackground.RaptorService {
         
         public System.Threading.Tasks.Task<bool> CheckEmailAddressIsFreeAsync(string emailAddress) {
             return base.Channel.CheckEmailAddressIsFreeAsync(emailAddress);
+        }
+        
+        public bool Ping() {
+            return base.Channel.Ping();
+        }
+        
+        public System.Threading.Tasks.Task<bool> PingAsync() {
+            return base.Channel.PingAsync();
         }
     }
 }

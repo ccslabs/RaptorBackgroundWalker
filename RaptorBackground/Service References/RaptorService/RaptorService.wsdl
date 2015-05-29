@@ -88,6 +88,12 @@
   <wsdl:message name="IRaptorService_CheckEmailAddressIsFree_OutputMessage">
     <wsdl:part name="parameters" element="tns:CheckEmailAddressIsFreeResponse" />
   </wsdl:message>
+  <wsdl:message name="IRaptorService_Ping_InputMessage">
+    <wsdl:part name="parameters" element="tns:Ping" />
+  </wsdl:message>
+  <wsdl:message name="IRaptorService_Ping_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PingResponse" />
+  </wsdl:message>
   <wsdl:portType msc:usingSession="true" name="IRaptorService">
     <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetLastError">
       <wsdl:input wsaw:Action="http://tempuri.org/IRaptorService/GetLastError" message="tns:IRaptorService_GetLastError_InputMessage" />
@@ -104,27 +110,31 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IRaptorService/DeleteUser" message="tns:IRaptorService_DeleteUser_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IRaptorService/DeleteUserResponse" message="tns:IRaptorService_DeleteUser_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetDetails">
+    <wsdl:operation msc:isInitiating="false" msc:isTerminating="false" name="GetDetails">
       <wsdl:input wsaw:Action="http://tempuri.org/IRaptorService/GetDetails" message="tns:IRaptorService_GetDetails_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IRaptorService/GetDetailsResponse" message="tns:IRaptorService_GetDetails_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="SendUrls">
+    <wsdl:operation msc:isInitiating="false" msc:isTerminating="false" name="SendUrls">
       <wsdl:input wsaw:Action="http://tempuri.org/IRaptorService/SendUrls" message="tns:IRaptorService_SendUrls_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IRaptorService/SendUrlsResponse" message="tns:IRaptorService_SendUrls_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="SendError">
+    <wsdl:operation msc:isInitiating="false" msc:isTerminating="false" name="SendError">
       <wsdl:input wsaw:Action="http://tempuri.org/IRaptorService/SendError" message="tns:IRaptorService_SendError_InputMessage" />
     </wsdl:operation>
-    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="ReceiveUrls">
+    <wsdl:operation msc:isInitiating="false" msc:isTerminating="false" name="ReceiveUrls">
       <wsdl:input wsaw:Action="http://tempuri.org/IRaptorService/ReceiveUrls" message="tns:IRaptorService_ReceiveUrls_InputMessage" />
     </wsdl:operation>
-    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="RegisterUser">
+    <wsdl:operation msc:isInitiating="false" msc:isTerminating="false" name="RegisterUser">
       <wsdl:input wsaw:Action="http://tempuri.org/IRaptorService/RegisterUser" message="tns:IRaptorService_RegisterUser_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IRaptorService/RegisterUserResponse" message="tns:IRaptorService_RegisterUser_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation msc:isInitiating="true" msc:isTerminating="true" name="CheckEmailAddressIsFree">
+    <wsdl:operation msc:isInitiating="false" msc:isTerminating="true" name="CheckEmailAddressIsFree">
       <wsdl:input wsaw:Action="http://tempuri.org/IRaptorService/CheckEmailAddressIsFree" message="tns:IRaptorService_CheckEmailAddressIsFree_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IRaptorService/CheckEmailAddressIsFreeResponse" message="tns:IRaptorService_CheckEmailAddressIsFree_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="false" msc:isTerminating="false" name="Ping">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRaptorService/Ping" message="tns:IRaptorService_Ping_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRaptorService/PingResponse" message="tns:IRaptorService_Ping_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="MyTcpBinding" type="tns:IRaptorService">
@@ -204,6 +214,15 @@
     </wsdl:operation>
     <wsdl:operation name="CheckEmailAddressIsFree">
       <soap12:operation soapAction="http://tempuri.org/IRaptorService/CheckEmailAddressIsFree" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ping">
+      <soap12:operation soapAction="http://tempuri.org/IRaptorService/Ping" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>

@@ -1,23 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.IO.Compression;
-using System.Linq;
 using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 namespace RaptorBackground.Classes
 {
     public class HttpDownloader
     {
-
         private readonly string _referer;
         private readonly string _userAgent;
 
         public Encoding Encoding { get; set; }
+
         public WebHeaderCollection Headers { get; set; }
+
         public Uri Url { get; set; }
 
         public HttpDownloader(string url, string referer, string userAgent)
@@ -44,7 +42,6 @@ namespace RaptorBackground.Classes
                 Url = response.ResponseUri;
                 return ProcessContent(response);
             }
-
         }
 
         private string ProcessContent(HttpWebResponse response)
@@ -133,5 +130,4 @@ namespace RaptorBackground.Classes
             return html;
         }
     }
-
 }
